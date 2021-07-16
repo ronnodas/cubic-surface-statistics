@@ -1,0 +1,30 @@
+\documentclass{article}
+
+\usepackage{ronnomacros}
+
+
+\begin{document}
+The point counts below are in moduli space, where each point is counted as the reciprocal of its stabilizer (in $\PGL_4$). To get counts in parameter space, multiply by $\#\PGL_4(\FF_q) = q^6(q^4-1)(q^3-1)(q^2-1)$. To get averages, divide by $q^4$. 
+
+Alternatively, the coefficient of $(-q)^i$ is the Betti number $\beta_{4-i}$ of the associated cover of moduli space. To get the Betti numbers for the cover of parameter space, tensor with $H^*(\PGL_4)$.
+
+In some identification with the blow up of $6$ points (so defined up to $W(E_6)$), the exceptional divisors are named $E_1, \dots, E_6$, the conics are named $F_1, \dots, F_6$, and the lines through pairs of points are named $G_{12}, \dots, G_{56}$.
+
+\begin{longtable}{llll}
+\toprule
+Marking & Example & Unordered & Ordered\\\midrule
+Nothing & & $q^4$ & Same as unordered\\
+One line & $E_1$ & $q^4$ & Same as unordered\\
+Two skew lines & $E_1, E_2$ & $q^4 - q^3 + 1$ & $q^4 - q^3 + q^2 - q + 2$\\
+Two intersecting lines & $E_1, G_{12}$ & $q^4$ & $q^4 - q + 1$\\
+Three skew lines & $E_1, E_2, E_3$ & $q^4 - 2q^3 + q^2 - q + 4$ & $q^4 - 4q^3 + 9q^2 - 15q + 14$ \\
+Tritangent & $E_1, F_2, G_{12}$ & $q^4$ & $q^4 - q + 1$\\
+Four skew lines & $E_1, E_2, E_3, E_4$ & $q^4 - 2q^3 + 2q^2 - 3q + 4$ & $q^4 - 10q^3 + 45q^2 - 95q + 75$\\
+Five skew lines & $E_1, E_2, \dots, E_5$ & $q^4 - q^3 + q^2 - q + 2$ & $q^4 - 15q^3 + 81q^2 - 185q + 150$\\
+Six skew lines & $E_1, E_2, \dots, E_6$ & $q^4 - q^3 + 1$ & $q^4 - 15q^3 + 81q^2 - 185q + 150$\\
+Double six & $E_1, \dots, E_6$, $F_1, \dots, F_6$ & $q^4 -q^3$ & $q^4 - 15q^3 + 81q^2 - 185q + 150$\\
+Twenty-seven lines & & $q^4$ & $q^4 - 15q^3 + 81q^2 - 185q + 150$\\
+\bottomrule
+\end{longtable}
+
+\end{document}

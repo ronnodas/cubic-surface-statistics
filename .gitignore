@@ -1,0 +1,14 @@
+*.aux
+*.bbl
+*.blg
+*.fls
+*.log
+*.out
+*.synctex.gz
+*.bcf
+*.run.xml
+*~
+*.bak
+*.sav
+.idea
+.ipynb_checkpoints

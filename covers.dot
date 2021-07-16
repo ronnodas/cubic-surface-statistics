@@ -1,0 +1,202 @@
+digraph {
+1 [label="no marking"];
+
+2 [label="double six, unordered"];
+2 -> 1 [label=36];
+
+3 [label="1 line"];
+3 -> 1 [label=27];
+
+4 [label="tritangent, unordered"];
+4 -> 1 [label=45];
+
+
+5 [label="6 skew lines, unordered"];
+5 -> 2 [label=2];
+
+6 [label="X, unordered"];
+6 -> 3 [label=5];
+6 -> 4 [label=3];
+
+7 [label="2 skew lines, unordered"];
+7 -> 1 [label=216];
+
+//8 [label="X, ordered"];
+9 [label="tritangent, ordered"];
+//9 -> 8 [color = "black:invis:black", dir="none"];
+9 -> 6 [label=2];
+
+10 [label="XX, unordered"];
+10 -> 3 [label=10];
+
+//11 [label="2 skew lines, ordered"];
+12 [label="5 skew lines, unordered"];
+//12 -> 11 [color = "black:invis:black", dir="none"];
+12 -> 3 [label=16];
+12 -> 5 [label=6];
+12 -> 7 [label=2];
+
+13 [label="3 skew lines, unordered"];
+13 -> 1 [label=720];
+
+14 [label="pattern 6A, unordered"];
+//14 [label="('E_1', 'E_2', 'F_1', 'F_3', 'G_{12}', 'G_{13}'), unordered"];
+14 -> 4 [label=16];
+
+15 [label="X|, unordered"];
+15 -> 9 [label=4];
+15 -> 10 [label=4];
+
+//16 [label="-|-|-, unordered"];
+17 [label="4 skew lines, unordered"];
+//17 -> 16 [color = "black:invis:black", dir="none"];
+17 -> 5 [label=15];
+17 -> 7 [label=5];
+17 -> 10 [label=4];
+
+18 [label="4-cycle, unordered"];
+18 -> 10 [label=4];
+
+19 [label="XX|, unordered"];
+19 -> 9 [label=6];
+19 -> 10 [label=6];
+
+//20 [label="X|, ordered"];
+//21 [label="-|-|-, ordered"];
+23 [label="XX, ordered"];
+//21 -> 20 [color = "black:invis:black", dir="none"];
+//23 -> 21 [color = "black:invis:black", dir="none"];
+23 -> 12 [label=5];
+23 -> 15 [label=2];
+23 -> 17 [label=2];
+
+22 [label="-|-|-|-, unordered"];
+22 -> 7 [label=10];
+22 -> 13 [label=3];
+22 -> 18 [label=2];
+
+24 [label="pattern 7A, unordered"];
+//24 [label="('E_1', 'E_2', 'F_1', 'F_3', 'G_{12}', 'G_{13}', 'E_3'), unordered"];
+24 -> 6 [label=16];
+24 -> 14 [label=3];
+24 -> 18 [label=2];
+
+25 [label="5-cycle, unordered"];
+25 -> 7 [label=12];
+
+26 [label="X||, unordered"];
+26 -> 6 [label=24];
+26 -> 17 [label=3];
+
+27 [label="pattern 8A, unordered"];
+//27 [label="('E_1', 'E_2', 'E_3', 'F_1', 'G_{24}', 'F_5', 'F_2', 'G_{16}'), unordered"];
+27 -> 6 [label=24];
+
+28 [label="3 skew lines, ordered"];
+//29 [label="-|-|-  |, unordered"];
+//29 -> 28 [color = "black:invis:black", dir="none"];
+28 -> 12 [label=10];
+28 -> 17 [label=4];
+28 -> 22 [label=2];
+
+30 [label="4-path, unordered"];
+30 -> 22 [label=2];
+30 -> 24 [label=2];
+
+31 [label="crossed pentagon, unordered"];
+31 -> 15 [label=4];
+31 -> 24 [label=2];
+
+32 [label="slashed 5-path, unordered"];
+32 -> 13 [label=6];
+32 -> 14 [label=6];
+
+33 [label="5-path + 1 line, unordered"];
+33 -> 12 [label=12];
+33 -> 25 [label=2];
+
+34 [label="-|-|-  ||, unordered"];
+34 -> 19 [label=4];
+34 -> 22 [label=3];
+34 -> 26 [label=2];
+
+35 [label="pattern 9A, unordered"];
+//35 [label="('E_1', 'E_2', 'E_3', 'F_1', 'G_{24}', 'F_5', 'F_2', 'G_{16}', 'G_{12}'), unordered"];
+35 -> 19 [label=4];
+35 -> 27 [label=2];
+
+//36 [label="-|-|-  |, ordered"];
+//37 [label="4-path, ordered"];
+38 [label="4-cycle, ordered"];
+//39 [label="crossed pentagon, ordered"];
+//40 [label="pattern 6A, ordered"];
+//41 [label="pattern 7A, ordered"];
+//37 -> 36 [color = "black:invis:black", dir="none"];
+//38 -> 37 [color = "black:invis:black", dir="none"];
+//39 -> 38 [color = "black:invis:black", dir="none"];
+//40 -> 39 [color = "black:invis:black", dir="none"];
+//41 -> 40 [color = "black:invis:black", dir="none"];
+38 -> 23 [label=4];
+38 -> 28 [label=2];
+38 -> 30 [label=2];
+38 -> 31 [label=2];
+
+//42 [label="-|-|-|-, ordered"];
+43 [label="X||, ordered"];
+//45 [label="XX|, ordered"];
+//43 -> 42 [color = "black:invis:black", dir="none"];
+//45 -> 43 [color = "black:invis:black", dir="none"];
+43 -> 23 [label=6];
+43 -> 28 [label=3];
+43 -> 34 [label=2];
+
+44 [label="4-path + 1 line, unordered"];
+44 -> 15 [label=12];
+44 -> 25 [label=5]
+44 -> 30 [label=3];
+44 -> 32 [label=3];
+44 -> 34 [label=2];
+
+46 [label="4 skew lines, ordered"];
+//47 [label="-|-|-  ||, ordered"];
+//48 [label="4-path + 1 line, ordered"];
+//49 [label="5-cycle, ordered"];
+//51 [label="slashed 5-path, ordered"];
+//47 -> 46 [color = "black:invis:black", dir="none"];
+//48 -> 47 [color = "black:invis:black", dir="none"];
+//49 -> 48 [color = "black:invis:black", dir="none"];
+//51 -> 49 [color = "black:invis:black", dir="none"];
+46 -> 38 [label=3];
+46 -> 44 [label=2];
+46 -> 43 [label=2];
+
+50 [label="pattern 6B, unordered"];
+//50 [label="('E_1', 'E_2', 'E_3', 'F_1', 'G_{24}', 'F_5'), unordered"];
+50 -> 27 [label=8];
+50 -> 31 [label=6];
+50 -> 44 [label=2];
+
+52 [label="pattern 7B, unordered"];
+//52 [label="('E_1', 'E_2', 'E_3', 'F_1', 'G_{24}', 'F_5', 'F_2'), unordered"];
+52 -> 33 [label=5];
+52 -> 35 [label=4];
+52 -> 44 [label=2];
+52 -> 43 [label=2];
+
+//53 [label="5 skew lines, ordered"];
+54 [label="6 skew lines, ordered"];
+//55 [label="pattern 6B, ordered"];
+//56 [label="5-path + 1 line, ordered"];
+//57 [label="pattern 7B, ordered"];
+//58 [label="pattern 8A, ordered"];
+//59 [label="pattern 9A, ordered"];
+//54 -> 53 [color = "black:invis:black", dir="none"];
+//55 -> 54 [color = "black:invis:black", dir="none"];
+//56 -> 55 [color = "black:invis:black", dir="none"];
+//57 -> 56 [color = "black:invis:black", dir="none"];
+//58 -> 57 [color = "black:invis:black", dir="none"];
+//59 -> 58 [color = "black:invis:black", dir="none"];
+54 -> 50 [label=2];
+54 -> 46 [label=2];
+54 -> 52 [label=2];
+}
